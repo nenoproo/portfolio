@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/src/images/favicon.ico" type="image/x-icon">
+    <title>Nenad Prokopiev - Portfolio</title>
+</head>
+
+<body id="top">
+
+    <div class="flex items-center justify-center min-h-screen bg-slate-700 preloader">
+        <div class="flex p-5 space-x-3 bg-white rounded-full loader">
+            <div class="w-5 h-5 bg-gray-800 rounded-full animate-bounce"></div>
+            <div class="w-5 h-5 bg-gray-800 rounded-full animate-bounce"></div>
+            <div class="w-5 h-5 bg-gray-800 rounded-full animate-bounce"></div>
+        </div>
+    </div>
+
+    <header
+        class="sticky top-0 z-10 items-center justify-between hidden w-full h-20 px-6 text-white header bg-slate-700">
+        <div class="logo ">
+            <a href="#top">
+                <img src="images/logo.png" class="w-16" alt="Logo" />
+            </a>
+        </div>
+
+        <button id="hamburger-button" class="text-3xl cursor-pointer md:hidden">
+            &#9776;
+        </button>
+
+        <nav class="items-center hidden h-full space-x-6 text-xl md:flex" aria-label="main-navigation">
+            <a href="#top" class="flex items-center h-full hover:bg-slate-600">Home</a>
+            <a href="#about-me" class="flex items-center h-full hover:bg-slate-600">About Me</a>
+            <a href="#music-works" class="flex items-center h-full hover:bg-slate-600">Music Works</a>
+            <a href="#frontend-projects" class="flex items-center h-full hover:bg-slate-600">Frontend Projects</a>
+            <a href="#footer" class="flex items-center h-full hover:bg-slate-600">Contact</a>
+        </nav>
+
+        <section id="mobile-menu"
+            class="absolute top-0 left-0 flex-col hidden w-full text-5xl origin-top animate-open-menu bg-slate-700 justify-content-center">
+            <button class="self-end px-6 text-8xl">&times;</button>
+            <nav class="flex flex-col items-center min-h-screen py-8" aria-label="mobile">
+                <a href="#home" class="w-full py-6 text-center hover:bg-slate-600">Home</a>
+                <a href="#about-me" class="w-full py-6 text-center hover:bg-slate-600">About Me</a>
+                <a href="#music-works" class="w-full py-6 text-center hover:bg-slate-600">Music Works</a>
+                <a href="#frontend-projects" class="w-full py-6 text-center hover:bg-slate-600">Frontend Projects</a>
+                <a href="#contact" class="w-full py-6 text-center hover:bg-slate-600">Contact</a>
+            </nav>
+        </section>
+    </header>
+
+    <main class="hidden max-w-4xl mx-auto main">
+        <section id="about-me"
+            class="flex flex-col items-center justify-center gap-8 p-6 my-12 sm:flex-row scroll-mt-28">
+            <article class="sm:w-1/2">
+                <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl text-slate-700">About Me</h2>
+                <p class="max-w-md mt-8 text-base text-center sm:text-lg sm:text-left">Hey, thanks for stopping by.
+                    I am Nenad, a professional music theorist and pedagogue. I play piano and write music.<br><br>
+                    I am also a front-end web developer, mostly focused on developing designs for web applications.<br>
+                    Front-end technologies that I use and I am experienced with:</p>
+                <div class="flex justify-center mx-auto mt-2 space-x-4 sm:justify-start">
+                    <i class="text-4xl text-orange-500 fab fa-html5" aria-label="HTML 5" title="HTML 5"></i>
+                    <i class="text-4xl text-blue-500 fab fa-css3-alt" aria-label="CSS 3" title="CSS 3"></i>
+                    <i class="text-4xl text-yellow-500 fab fa-js" aria-label="JavaScript" title="JavaScript"></i>
+                    <i class="text-4xl text-blue-300 fab fa-react" aria-label="React" title="React"></i>
+                    <i class="text-4xl text-teal-400 fas fa-wind" aria-label="Tailwind CSS" title="Tailwind CSS"></i>
+                </div>
+                <p class="max-w-md mt-4 text-xl text-center sm:text-lg sm:text-left">Other skills:</p>
+                <div class="flex justify-center mt-2 space-x-4 sm:justify-start">
+                    <i class="text-4xl text-red-500 fab fa-git-alt" aria-label="Git" title="Git"></i>
+                    <i class="text-4xl text-gray-800 fab fa-github" aria-label="GitHub" title="GitHub"></i>
+                </div>
+
+                <p class="max-w-md mt-4 text-base text-center sm:text-lg sm:text-left">As a minimalist, I enjoy reading
+                    books, drinking green tea and petting my cats.</p>
+            </article>
+            <img src="images/profile.png" class="w-1/2 border-4 rounded-full border-slate-700"
+                alt="Profile picture of Nenad Prokopiev">
+        </section>
+
+        <hr class="w-2/3 mx-auto bg-black rounded">
+
+        <section id="music-works" class="p-6 my-12 scroll-mt-28">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl sm:text-center text-slate-700">Music Works</h2>
+            <p class="mt-8 text-base text-center sm:text-lg">The purpose of this section is to share my sketches and
+                short compositions for tv, advertisements, anime,
+                video games… based on my past and future knowledge, experiments and research. They are not for sale or
+                officially released.</p>
+            <p class="my-8 text-base text-center sm:text-lg">For better experience use your headphones. 🎧</p>
+            <div class="flex justify-center">
+                <iframe class="w-full h-[550px] sm:w-1/2 sm:h-[550px]" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/389337716&color=%2385b8e6&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+            <p class="my-8 text-base text-center sm:text-lg">For a deeper dive into my music, you can access the
+                compositions in PDF format <a
+                    href="https://drive.google.com/drive/folders/1SXMZrR0yS7qLTuvZsuhjHbAO-YvWZq4B?usp=sharing"
+                    class="text-sky-400 hover:text-sky-600" target="_blank" rel="noopener noreferrer">here</a>.</p>
+        </section>
+
+        <hr class="w-2/3 mx-auto bg-black rounded">
+
+        <section id="frontend-projects" class="p-6 my-12 scroll-mt-28">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl sm:text-center text-slate-700">Frontend Projects</h2>
+            <ul class="flex flex-wrap justify-center gap-8 m-12 mx-auto mt-8 list-none">
+                <li
+                    class="flex flex-col items-center w-full px-2 py-6 bg-white border border-solid shadow-xl border-slate-500 rounded-2xl sm:w-[30%]">
+                    <img src="images/project-1.png" alt="Digital Clock Project">
+                    <h3 class="mt-2 text-xl text-center">Digital Clock</h3>
+                    <a href="https://nenoproo.github.io/digital-clock" target="_blank"
+                        class="mt-2 text-2xl text-center uppercase text-sky-400 hover:text-sky-600"
+                        rel="noopener noreferrer">View</a>
+                </li>
+                <li
+                    class="flex flex-col items-center w-full px-2 py-6 bg-white border border-solid shadow-xl border-slate-500 rounded-2xl sm:w-[30%]">
+                    <img src="images/project-2.png" alt="Interest Calculator Project">
+                    <h3 class="mt-2 text-xl text-center">Interest Calculator</h3>
+                    <a href="https://nenoproo.github.io/interest-calculator"
+                        class="mt-2 text-2xl text-center uppercase text-sky-400 hover:text-sky-600" target="_blank"
+                        rel="noopener noreferrer">View</a>
+                </li>
+                <li
+                    class="flex flex-col items-center w-full px-2 py-6 bg-white border border-solid shadow-xl border-slate-500 rounded-2xl sm:w-[30%]">
+                    <img src="images/project-3.png" alt="React Footer Project">
+                    <h3 class="mt-2 text-xl text-center">React Footer</h3>
+                    <a href="https://nenoproo.github.io/star-trek-3d-cards"
+                        class="mt-2 text-2xl text-center uppercase text-sky-400 hover:text-sky-600" target="_blank"
+                        rel="noopener noreferrer">View</a>
+                </li>
+                <li
+                    class="flex flex-col items-center w-full px-2 py-6 bg-white border border-solid shadow-xl border-slate-500 rounded-2xl sm:w-[30%]">
+                    <img src="images/project-4.png" alt="Star Trek 3D Cards Project">
+                    <h3 class="mt-2 text-xl text-center">Star Trek 3D Cards</h3>
+                    <a href="https://nenoproo.github.io/star-trek-3d-cards"
+                        class="mt-2 text-2xl text-center uppercase text-sky-400 hover:text-sky-600" target="_blank"
+                        rel="noopener noreferrer">View</a>
+                </li>
+                <li
+                    class="flex flex-col items-center w-full px-2 py-6 bg-white border border-solid shadow-xl border-slate-500 rounded-2xl sm:w-[30%]">
+                    <img src="images/project-5.png" alt="React To Do App Project">
+                    <h3 class="mt-2 text-xl text-center">React To Do App</h3>
+                    <a href="https://nenoproo.github.io/react-to-do-app"
+                        class="mt-2 text-2xl text-center uppercase text-sky-400 hover:text-sky-600" target="_blank"
+                        rel="noopener noreferrer">View</a>
+                </li>
+                <li
+                    class="flex flex-col items-center w-full px-2 py-6 bg-white border border-solid shadow-xl border-slate-500 rounded-2xl sm:w-[30%]">
+                    <img src="images/project-6.png" alt="Dropdown Menu Project">
+                    <h3 class="mt-2 text-xl text-center">Dropdown Menu</h3>
+                    <a href="https://nenoproo.github.io/dropdown-menu"
+                        class="mt-2 text-2xl text-center uppercase text-sky-400 hover:text-sky-600" target="_blank"
+                        rel="noopener noreferrer">View</a>
+                </li>
+                <li
+                    class="flex flex-col items-center w-full px-2 py-6 bg-white border border-solid shadow-xl border-slate-500 rounded-2xl sm:w-[30%]">
+                    <img src="images/project-7.png" alt="React Kings Players Cards">
+                    <h3 class="mt-2 text-xl text-center">React NBA Cards</h3>
+                    <a href="https://nenoproo.github.io/react-kings-players-cards"
+                        class="mt-2 text-2xl text-center uppercase text-sky-400 hover:text-sky-600" target="_blank"
+                        rel="noopener noreferrer">View</a>
+                </li>
+                <li
+                    class="flex flex-col items-center w-full px-2 py-6 bg-white border border-solid shadow-xl border-slate-500 rounded-2xl sm:w-[30%]">
+                    <img src="images/project-8.png" alt="Tip Calculator App">
+                    <h3 class="mt-2 text-xl text-center">Tip Calculator App</h3>
+                    <a href="https://tip-calculate-app.onrender.com/"
+                        class="mt-2 text-2xl text-center uppercase text-sky-400 hover:text-sky-600" target="_blank"
+                        rel="noopener noreferrer">View</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="footer" class="hidden w-full pt-2 pb-4 footer bg-slate-700">
+        <div class="w-full mb-4">
+            <p class="text-center text-white animate-bounce animate-duration-500">↑</p>
+            <p class="text-sm text-center text-white"><a href="#about-me">Back to Top</a></p>
+        </div>
+
+        <div
+            class="flex flex-col w-full gap-2 px-6 my-6 text-base text-center text-white sm:text-xl sm:flex-row sm:justify-between">
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                1000 Skopje, Republic of Macedonia
+            </div>
+
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                prokopievnenad@gmail.com
+            </div>
+
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                +389 75 416 892
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-4 my-10">
+            <a href="https://linkedin.com/in/nenad-prokopiev">
+                <i
+                    class="transition-all duration-250 ease-in-out hover:text-[hsl(210,10%,43%)] hover:bg-white w-10 text-white bg-[hsl(210,10%,43%)] p-3 text-center leading-10 rounded-full fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/nenoproo">
+                <i
+                    class="transition-all duration-250 ease-in-out hover:text-[hsl(210,10%,43%)] hover:bg-white w-10 text-white bg-[hsl(210,10%,43%)] p-3 text-center leading-10 rounded-full fa-brands fa-github"></i>
+            </a>
+            <a href="https://soundcloud.com/nenadprokopiev">
+                <i
+                    class="transition-all duration-250 ease-in-out hover:text-[hsl(210,10%,43%)] hover:bg-white w-10 text-white bg-[hsl(210,10%,43%)] p-3 text-center leading-10 rounded-full fa-brands fa-soundcloud"></i>
+            </a>
+            <a href="https://youtube.com/@nenopro2">
+                <i
+                    class="transition-all duration-250 ease-in-out hover:text-[hsl(210,10%,43%)] hover:bg-white w-10 text-white bg-[hsl(210,10%,43%)] p-3 text-center leading-10 rounded-full fa-brands fa-youtube"></i>
+            </a>
+        </div>
+
+        <hr class="h-[2px] rounded mx-6 bg-gray-400 border-0">
+
+        <div class="pt-2 mt-4 mb-2 text-[10px] text-center text-white">
+            Copyright © <span id="year"></span> - Designed and Developed by Nenad Prokopiev <span
+                class="hidden sm:inline">|</span> <span class="block sm:inline">All Rights Reserved</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
