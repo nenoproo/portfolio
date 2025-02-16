@@ -1,4 +1,8 @@
 const currentYear = new Date().getFullYear();
+const projectsList = document.querySelector('ul');
+const projects = projectsList.querySelectorAll('li');
+const loadMoreBtn = document.getElementById('load-more-button');
+
 document.getElementById('year').textContent = currentYear;
 
 const initApp = () => {
@@ -29,3 +33,18 @@ window.addEventListener('load', () => {
         footer.style.display= "block";
     }, 2000);
 });
+
+// Showing more projects logic
+projects.forEach((project, index) => { // сите лист ајтеми односно сите проекти, користам forEach пошто не создаваме нови листи туку менуваме стилови на ајтемиве
+    if (index >=6) {
+        project.style.display = 'none';
+    }
+})
+
+loadMoreBtn.addEventListener('click', () => {
+    projects.forEach((project) => {
+        project.style.display = 'flex';
+    });
+
+    loadMoreBtn.style.display = 'none';
+})
