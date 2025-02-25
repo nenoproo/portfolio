@@ -31,7 +31,7 @@ window.addEventListener('load', () => {
         header.style.display = "flex";
         main.style.display = "block";
         footer.style.display= "block";
-    }, 2000);
+    }, 1000);
 });
 
 // Showing more projects logic
