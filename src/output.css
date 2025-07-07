@@ -1134,6 +1134,10 @@ body {
     width: 40%;
   }
 
+  .sm\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }

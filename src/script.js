@@ -25,20 +25,11 @@ window.addEventListener("load", () => {
   const header = document.querySelector(".header");
   const main = document.querySelector(".main");
   const footer = document.querySelector(".footer");
-
-  const startTime = performance.now(); // Record the time when loading starts
-
-  setTimeout(() => {
-    const elapsedTime = performance.now() - startTime; // Time elapsed since load event
-    const remainingTime = Math.max(0, 1500 - elapsedTime); // Ensure preloader stays for at least 1.5s
-
-    setTimeout(() => {
-        preloader.style.display = "none"; // Hide preloader
-        header.style.display = "flex"; // Show header
-        main.style.display = "block"; // Show main content
-        footer.style.display = "block"; // Show footer
-      }, remainingTime);
-  }, 0);
+  
+  preloader.style.display = "none"; // Hide preloader
+  header.style.display = "flex"; // Show header
+  main.style.display = "block"; // Show main content
+  footer.style.display = "block"; // Show footer
 });
 
 // Showing more projects logic
